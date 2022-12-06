@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home Design Solutions Website</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Customer Testimonials and Reviews
+    </title>
+
+    <style>
+
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #B7860C;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 15px 10px 50px rgba(0, 0, 0, 1);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+            /* Styling form-control Label */
+            .form-control label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Styling form-control input,
+        select, textarea */
+            .form-control input,
+            .form-control select,
+            .form-control textarea {
+                border: 1px solid #777;
+                border-radius: 2px;
+                font-family: inherit;
+                padding: 10px;
+                display: block;
+                width: 95%;
+            }
+
+                /* Styling form-control Radio
+        button and Checkbox */
+                .form-control input[type="radio"],
+                .form-control input[type="checkbox"] {
+                    display: inline-block;
+                    width: auto;
+                }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Top Image Banner-->
+    <div class="ImageFile">
+        <h1 class="glow" style="text-align: right">Welcome to Home Design Solutions: We Value our Customers!</h1>
+    </div>
+    <!--Top Image Banner Ends-->
+    <!-- Navigation Bar Starts -->
+    <div id="container">
+        <ul id="nav">
+            <div class="navbar">
+            <li class="odd"><a href="index.html">Home</a></li>
+            <li class="even"><a href="AboutUs.html">About Us and Locations</a></li>
+            <li class="even"><a href="Testimonials.html" class="even">Reviews and Testimonials</a></li>
+            <li class="odd"><a href="Contact.html">Contact Us</a></li>
+            <li class="odd"><a href="PricingandCost.html">Pricing and Costs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Lighting.html">Lighting</a>
+                    <a href="Bathroom.html">Kitchen and Bath</a>
+                    <a href="Kitchen.html">Countertops</a>
+                    <a href="Tiles.html">Floortiles</a>
+                    <a href="Outdoors.html">Outdoors</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    </div>
+    <!-- Navigation Bar Ends -->
+    <h1>Home Design Solutions: Write Us a Review</h1>
+
+    <p> Here at Home Design Solutions We Value Our Customers and are always welcome to your feedback and ideas. Please fill out this form and we'll get back to you as soon as we can.</p>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="tel"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+
+
+        <div class="form-control">
+            <label for="number" id="label-number">
+                Phone Number
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="number"
+                   id="number"
+                   placeholder="Enter your phone number" />
+        </div>
+
+
+
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="Address" id="label-address">
+                Address
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="address"
+                   placeholder="Enter your Address" />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="currentcustomer">Current Customer</option>
+                <option value="formercustomer">Former Customer</option>
+                <option value="CurrentEmployee">
+                    Employee
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Would you recommend Home Design Solutions
+                to a friend?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>
+                What did we do for you?
+                <small>(Check all that apply)</small>
+            </label>
+
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Design</input>
+            </label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Plumbing Work</input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Cabinet Installation</input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Refacing Cabinets</input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Electrical Work</input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Fire pit Inst</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Wall painting</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">General construction</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Delivery</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Outdoor Home Design</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions.<br>
+                Please Share any Details that will help!
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                      placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>

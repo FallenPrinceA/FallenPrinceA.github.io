@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Design Solutions Website</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+                .column img:hover {
+                    opacity: 1;
+                }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Top Image Banner-->
+    <div class="ImageFile">
+        <h1 class="glow" style="text-align: right">Welcome to Home Design Solutions: We Value our Customers!</h1>
+    </div>
+    <!--Top Image Banner Ends-->
+    <!-- Navigation Bar Starts -->
+    <div id="container">
+        <ul id="nav">
+            <div class="navbar">
+            <li class="odd"><a href="index.html">Home</a></li>
+            <li class="even"><a href="AboutUs.html">About Us and Locations</a></li>
+            <li class="even"><a href="Testimonials.html" class="even">Reviews and Testimonials</a></li>
+            <li class="odd"><a href="Contact.html">Contact Us</a></li>
+            <li class="odd"><a href="PricingandCost.html">Pricing and Costs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Lighting.html">Lighting</a>
+                    <a href="Bathroom.html">Kitchen and Bath</a>
+                    <a href="Kitchen.html">Countertops</a>
+                    <a href="Tiles.html">Floortiles</a>
+                    <a href="Outdoors.html">Outdoors</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    </div>
+    <!-- Navigation Bar Ends -->
+
+    <div style="text-align:center">
+        <h2>Kitchen and Bath</h2>
+        <p>Check out our beautiful selection of Bathroom Sets (Installation Not Included in Prices)</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/082317-transitional-sconces-wall-lamps-h.jpg?qlt=65&wid=960&hei=600&fmt=jpeg&resMode=sharp2&op_usm=2,0.3,3" alt="Name: Crystal Glass Bathroom Sink and Mirror Set<br> Price: $1,508 <br>Description: Silver and Glass Crystal Bathroom Sink Set of 2 with Two Mirrors with Bedded rims" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/210625-transitional-sconces-wall-lamps-h.jpg?qlt=65&wid=960&hei=600&fmt=jpeg&resMode=sharp2&op_usm=2,0.3,3" alt="Name: Wooden Sink Vanity Set<br>Price: $2,530 <br>Description: Single Sink Wooden Vanity Set with fiber glass mirror and High Warm Antiqued Brass and Black Wall Sconce
+set of 2" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/181228-contemporary-modern-sconces-wall-lamps-h.jpg?qlt=65&wid=960&hei=600&fmt=jpeg&resMode=sharp2&op_usm=2,0.3,3" alt="Name: Earthy Bathroom Sink Set <br>Price: $2,108 <br> Description: Earthy Bathroom Sink with Oval Wall Mirror and High Chrome Wall Sconce" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/180417-transitional-sconces-wall-lamps-h.jpg?qlt=65&wid=960&hei=600&fmt=jpeg&resMode=sharp2&op_usm=2,0.3,3" alt="Name: Bronze Bathroom Sink Set <br> Price: 1,325 <br> Description: Bronze Marble Vanity Sink with Large bronze and gold round wall mirror and three set Bronze Bathroom Light Fixture" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

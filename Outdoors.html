@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Design Solutions Website</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+                }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+                .column img:hover {
+                    opacity: 1;
+                }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Top Image Banner-->
+    <div class="ImageFile">
+        <h1 class="glow" style="text-align: right">Welcome to Home Design Solutions: We Value our Customers!</h1>
+    </div>
+    <!--Top Image Banner Ends-->
+    <!-- Navigation Bar Starts -->
+    <div id="container">
+        <ul id="nav">
+            <div class="navbar">
+            <li class="odd"><a href="index.html">Home</a></li>
+            <li class="even"><a href="AboutUs.html">About Us and Locations</a></li>
+            <li class="odd"><a href="Testimonials.html" class="even">Reviews and Testimonials</a></li>
+            <li class="even"><a href="Contact.html">Contact Us</a></li>
+            <li class="odd"><a href="PricingandCost.html">Pricing and Costs</a></li>
+            <li class="even">a hred="FAQ.html">Frequenly Askes Questions</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Lighting.html">Lighting</a>
+                    <a href="Bathroom.html">Kitchen and Bath</a>
+                    <a href="Kitchen.html">Countertops</a>
+                    <a href="Tiles.html">Floortiles</a>
+                    <a href="Outdoors.html">Outdoors</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    </div>
+    <!-- Navigation Bar Ends -->
+
+    <div style="text-align:center">
+        <h2>Outdoor Decor and Appliances</h2>
+        <p>Check out our beautiful selection of Outdoor Decor to give your home a beautiful glow and personality. (Installation Not Included in Prices)</p>
+    </div>
+
+    <!-- The Twelve columns -->
+    <div class="row">
+        <div class="column">
+            <img src="https://source.widen.net/content/2rzgqeo6im/webp/CDL-21410020_Outdoor-Globe-Pathway-Lights_Set-of-6_SSC.webp?w=635&h=800&keep=c&crop=yes&color=cccccc&quality=70&u=7mzq6p" alt="Name: Outdoor Globe Pathway Lights<br> Price: $95.29 <br>Description: A total of six Pathway Lights with a Height of 19 inches and a width of 4 inches. Bulbs included with a gold metal glow." style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000139987/www.gardeners.com/globalassets/product-media-catalog/38/600-699/38-690/gs38690_02_rose-trellis.jpg" alt="Name: Rose Garden Archway<br>Price: $249.95 <br>Description: Powdered Coated Steel Gold Colored Archway for Gardens and outdoor walkways. Can be decorated with lights and easy to breakdown." style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000139987/www.gardeners.com/globalassets/product-media-catalog/8597/600-699/8597699/8597699_03v_moon-gate-arch.jpg" alt="Name: Moon Gate Archway <br>Price: $$532 <br> Description: Steel Moon Gate Arch to connect and define your beautiful backdoor garden. Good for romantic atmosphere and for a cozy bench setting." style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000139987/www.gardeners.com/globalassets/product-media-catalog/8587/100-199/8587110/8587110_156.jpg" alt="Name: Northern Light Spheres <br> Price: 2 for $34.99<br> Description: Solar Powered Northern Light Sphere, come in a set of two with beautiful colorfuls of red, gold, green, and blue. Fill your garden with beautiful solar powered light. Sold only in pair of two but better when grouped together." style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://marvel-b1-cdn.bc0a.com/f00000000139987/www.gardeners.com/globalassets/product-media-catalog/8597/300-399/8597368/8597368_1316_star-shower-led-lights-watering-can-garden-art.jpg" alt="Name: Star Shower Garden Art<br> Price: $89.95<br> Description: Electrical Powered Glow in the Dark, Faux Rain Art. Set timer of six hours to light up your majestic garden in the dark." style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/donovan-37-and-three-quarter-inch-wide-dualheat-lp-gas-fire-pit-table__85h61cropped.jpg?qlt=65&wid=780&hei=780&op_sharpen=1&fmt=jpeg" alt="Name: Bronze Finish Fire place<br> Price: $745<br> Description: Perfect place to relax during a cool night. Our Bronze Fire Place gives your backyard a more homely finish while also being able to be used to warm up your home. Bronze finish that gives the illusion of faux wood." style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/madera-36-inch-wide-rustic-stone-propane-gas-fire-pit__1w089cropped.jpg?qlt=65&wid=780&hei=780&op_sharpen=1&fmt=jpeg" alt="Name: Stone Fire pit<br> Price: $1,745<br> Description: Rustic Wooden Home Gas Fire Pit. Propane tank not included. Fashioned after classic homely stone masonry. " style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="https://image.lampsplus.com/is/image/b9gt8/zurich-30-inch-round-steel-bowl-outdoor-fire-pit__79d61cropped.jpg?qlt=65&wid=780&hei=780&op_sharpen=1&fmt=jpeg" alt="Name: Steel Bowl fire pit<br> Price: $74.85<br> Description:Round metal Steel Bowl Outdoor Fire pit. For Patio and Yard eras" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

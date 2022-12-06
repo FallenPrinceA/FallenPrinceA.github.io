@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Design Solutions Website</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+                .column img:hover {
+                    opacity: 1;
+                }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Top Image Banner-->
+    <div class="ImageFile">
+        <h1 class="glow" style="text-align: right">Welcome to Home Design Solutions: We Value our Customers!</h1>
+    </div>
+    <!--Top Image Banner Ends-->
+    <!-- Navigation Bar Starts -->
+    <div id="container">
+        <ul id="nav">
+            <div class="navbar">
+            <li class="odd"><a href="index.html">Home</a></li>
+            <li class="even"><a href="AboutUs.html">About Us and Locations</a></li>
+            <li class="even"><a href="Testimonials.html" class="even">Reviews and Testimonials</a></li>
+            <li class="odd"><a href="Contact.html">Contact Us</a></li>
+            <li class="odd"><a href="PricingandCost.html">Pricing and Costs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Lighting.html">Lighting</a>
+                    <a href="Bathroom.html">Kitchen and Bath</a>
+                    <a href="Kitchen.html">Countertops</a>
+                    <a href="Tiles.html">Floortiles</a>
+                    <a href="Outdoors.html">Outdoors</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    </div>
+    <!-- Navigation Bar Ends -->
+
+    <div style="text-align:center">
+        <h2>Kitchen and Bath</h2>
+        <p>Check out our beautiful selection of Countertops (Installation Not Included in Prices)</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2014/12/10/0/Denise-McGaha_Traditional-Meets-Modern-Entertaining-Pad_Kitchen.jpg.rend.hgtvcom.966.644.suffix/1418228634117.jpeg" alt="Name: Green Mable Countertop<br> Price: $7.50 for 2 inches x 2 inches <br>Description: Green and Black Marble Countertop Finish for Kitchens with round surface edges" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://i.etsystatic.com/24047806/r/il/b309ad/3133486364/il_794xN.3133486364_87f4.jpg" alt="Name: Pink Rose Quartz Countertop<br>Price: $12 for 2 inch x 2 inch <br>Description: Bright Bubble Gum Pink Rose Quarts Kithen Finish" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://studio76kitchens.com/wp-content/uploads/2017/11/Sept-2017-Insta-Ad-3-1024x681.jpg" alt="Name: Gray Granite Finish <br>Price: $10 for 2 inch x 2 inch <br> Description: Gray Granite Finish Countertop for Kitchens and sinks" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://cabinetrydesigns.com/wp-content/uploads/2018/09/mesquite-wood-countertops-img026.jpg" alt="Name: Wooden Countertop Finish <br> Price: $7.52 for 2 inches x 2 inches <br> Description: Mesquite Oak Wood Finish with Oval Edge" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

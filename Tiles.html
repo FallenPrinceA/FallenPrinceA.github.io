@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Design Solutions Website</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+                .column img:hover {
+                    opacity: 1;
+                }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--Top Image Banner-->
+    <div class="ImageFile">
+        <h1 class="glow" style="text-align: right">Welcome to Home Design Solutions: We Value our Customers!</h1>
+    </div>
+    <!--Top Image Banner Ends-->
+    <!-- Navigation Bar Starts -->
+    <div id="container">
+        <ul id="nav">
+            <div class="navbar">
+            <li class="odd"><a href="index.html">Home</a></li>
+            <li class="even"><a href="AboutUs.html">About Us and Locations</a></li>
+            <li class="even"><a href="Testimonials.html" class="even">Reviews and Testimonials</a></li>
+            <li class="odd"><a href="Contact.html">Contact Us</a></li>
+            <li class="odd"><a href="PricingandCost.html">Pricing and Costs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Lighting.html">Lighting</a>
+                    <a href="Bathroom.html">Kitchen and Bath</a>
+                    <a href="Kitchen.html">Countertops</a>
+                    <a href="Tiles.html">Floortiles</a>
+                    <a href="Outdoors.html">Outdoors</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    </div>
+    <!-- Navigation Bar Ends -->
+    <div style="text-align:center">
+        <h2>Floortiles</h2>
+        <p>Check out our beautiful selection of Floortiles for your kitchen, bath, nad bedrooms. (Installation Not Included in Prices)</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="https://i8.amplience.net/i/flooranddecor/100650241_brazilian-cherry-laminate_display?fmt=auto&qlt=85&w=700" alt="Name: Brazilian Cheery Floortile<br> Price: $1.79 per square foot <br>Description: Brazilian Cherry Laminate with a wooden floor finish" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://retrorenovation.com/wp-content/uploads/2021/09/black-white-checker-kitchen-floor-1.jpg" alt="Name: Black and White Floortile<br>Price: $1.25 per square foot <br>Description: Black and White Floor Checkered Finish" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://m.media-amazon.com/images/I/91nvDXOzD+L.jpg" alt="Name: Pattern Granite Floor tile <br>Price: $2.20 per square foot <br> Description: Faux Wood Granite Brown Floor Finish of various brown and sand colors" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="https://cdn.trendir.com/wp-content/uploads/old/archives/2015/09/12/floor-tile-rustic-aged-look-eco-ceramica-2.jpg" alt="Name: Wooden Countertop Finish <br> Price: $7.52 per square foot <br> Description: Our most expensive selection, the ceramic Hexagon and Square Pattern Design with a Flowery Rose Design of your choice" style="width:150px; height: 150px" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
